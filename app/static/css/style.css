@@ -1,0 +1,90 @@
+body{
+    background: #131D47;
+}
+
+.logo_g{
+    height: 490px;
+    width: 600px;
+    right: 480px;
+    left: 200px;
+    top: 100px;
+    
+    border-radius: 0px;
+
+}
+
+.logo_h{
+    height: 350px;
+    width: 400px;
+    right: 200px;
+    left: px;
+    top: 100px;
+    
+    border-radius: 0px;
+
+}
+
+main{
+    background: ;
+}
+
+.logo_a{
+    height: 90px;
+    width: 102.px;
+    left: 120px;
+    top: 40px;
+    border-radius: 50.px;
+
+}
+
+.pessoa2{
+    height: 212px;
+    width: 212px;
+    left: 738px;
+    top: 1232px;
+    border-radius: 18px;
+
+}
+
+.game{
+    height: 719px;
+    width: 719px;
+    left: 865px;
+    top: 160px;
+    border-radius: 0px;
+
+}
+
+h1{
+    color: #ffffff ;
+}
+
+h2{
+    color: #ffffff ;
+}
+h3{
+    color: #ffffff ;
+}
+
+h4{
+    color: #ffffff ;
+}
+
+.form-label{
+    color: #ffffff ;
+}
+p{
+    color: #ffffff ;
+}
+
+div {
+    color: #ffffff ;
+}
+
+.btn_buton{
+    background: #E592B5;
+}
+
+a{
+    color: #ffffff ;
+}

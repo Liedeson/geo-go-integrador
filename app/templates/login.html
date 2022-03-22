@@ -1,0 +1,42 @@
+{% extends  'base.html' %}
+
+{% block content %}
+<ul class="nav nav-pills">
+  <img class="logo_a" src="{{ url_for('static', filename='img/logoa.png') }}" alt=""> 
+    <br>
+</ul>
+
+<main class="container">
+  <div class="row justify-content-end">
+    <div class="col-12">
+      <form action="{{ url_for('login') }}" method="post" class="d-flex flex-column p-5 gap-3">
+        {{ form.csrf_token }}
+
+        <h1>Faça seu login</h1>
+
+        {% include 'components/flash.html' %}
+
+        <div>
+          <label for="" class="form-label">E-mail</label>
+          {{ form.email(class='form-control') }}
+        </div>
+        
+        <div>
+          <label for="" class="form-label">Senha</label>
+          {{ form.password(class='form-control') }}
+        </div>
+
+        <div>
+          {{ form.submit(class='btn btn_buton text-light') }}
+        </div>
+
+        <div>
+          <p>
+            Não é inscrito? <a class="btn btn-danger" href="{{ url_for('register') }}">Inscreva-se aqui</a>
+          </p>
+        </div>
+      </form>
+    </div>
+  </div>
+</main>
+{% endblock %}

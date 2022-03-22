@@ -1,0 +1,30 @@
+{% extends  'base.html' %}
+
+{% block content %}
+{% include 'components/nav.html' %}
+<main class="container py-3">
+  <div class="row justify-content-center">
+    <div class="col-13 border rounded">
+      <h1 class="row justify-content-center">
+        {{ desafio.title }}
+      </h1>
+      <hr>
+      <p>
+        <span class="fw-bold">Descrição:</span>
+        {{ desafio.description }}
+      </p>
+      
+      <div class="d-flex justify-content-end gap-3 pt-5"> 
+        <a class="btn btn-danger" href="{{ url_for('excluir_desafio', id=desafio.id) }}">
+          Excluir
+        </a>
+        <a class="btn btn_buton text-light" href="{{ url_for('editar_desafio', id=desafio.id) }}">
+          Editar
+        </a>
+          
+      </div>
+    </div>
+    <img class="game" src="{{ url_for('static', filename='img/game.svg') }}"  class="rounded float-left" alt="">
+  </div>
+</main>
+{% endblock %}
